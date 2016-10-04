@@ -116,15 +116,16 @@
 
 /* ---------------- < footer > ---------------- */
 
-.pad {
-	padding: 8px;
+.back-to-top{
+    cursor: pointer;
 }
+
 
 /* Add a dark background color to the footer */
 footer {
     background-color: #2d2d30;
     color: #f5f5f5;
-    padding: 33px;
+    padding: 23px;
 }
 
 footer a {

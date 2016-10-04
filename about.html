@@ -1,57 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>8 things to get to know me better</title>
-	<link rel="stylesheet" href="includes/about.css">
+  <title>Life as A Giggleball</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./includes/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./includes/about.css">
+  <script src="./jquery-3.1.1.min.js"></script>
+  <script src="includes/bootstrap.min.js"></script>
 </head>
-<body>
-	<div class="header">
-		<div class="container">
-			<div class="logo"> 
-				<h1><a href="a">Giggleball</h1>
-			</div>
-			<div class="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-			</div>
-		</div>
-	</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#band">BAND</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-	<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-	<div class="content">
-		<p>Welcome to my website.</p>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="./includes/photoshoot.jpg">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>The atmosphere in New York is lorem ipsum.</p>
+      </div> 
+    </div>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus id ipsum imperdiet pharetra. Morbi non imperdiet ante. Integer eu sapien sit amet ante malesuada commodo. Maecenas commodo posuere ex, nec pellentesque augue condimentum sed. Nam quis tempor enim. Ut ac rutrum ipsum, vel scelerisque quam. Etiam ac est id purus vestibulum ultricies. Aliquam vitae erat eget metus lobortis consequat.</p>
+    <div class="item">
+      <img src="./includes/sis.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago - A night we won't forget.</p>
+      </div> 
+    </div>
 
-		<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu pellentesque elit. Proin aliquet commodo lorem in tempus. Duis ultrices feugiat nibh in tempor. Curabitur consectetur fringilla felis, a sodales ante rutrum ut. Sed nec tellus turpis. Integer ac pharetra massa. Nulla gravida nulla in nunc feugiat posuere.</p>
+    <div class="item">
+      <img src="./includes/sis.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+        <h3>LA</h3>
+        <p>Even though the traffic was a mess, we had the best time.</p>
+      </div> 
+    </div>
+  </div>
 
-		<p>Nullam vitae justo quis justo consequat blandit. Ut in blandit purus. In eleifend, enim in pellentesque laoreet, lorem ligula auctor nisi, ornare placerat lorem ex eget ipsum. Phasellus interdum dolor a dui bibendum, nec facilisis purus vulputate. Ut in lectus gravida, tristique tortor eget, aliquam ex. Suspendisse potenti. Morbi sed massa magna. Cras sed sodales nisi.</p>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-		<p>Sed euismod ante justo. Vivamus nibh risus, ornare vehicula massa nec, hendrerit luctus lacus. Phasellus feugiat commodo nibh, et rutrum ex lobortis sit amet. Nam varius ultrices ligula, ut dapibus libero lobortis sed. Vivamus vel dictum lorem. Vestibulum non mi nec tellus fermentum varius. Sed scelerisque nisi ut finibus porta. Curabitur leo purus, ultricies eu tincidunt sed, tempor eget lorem. Suspendisse nec libero nec lorem porta congue id a eros.</p>
+<div id="band" class="container text-center">
+  <h3>THE BAND</h3>
+  <p><em>We love music!</em></p>
+  <p>We have created a fictional band website. Lorem ipsum..</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+      <img src="./includes/elicut.jpg" class="img img-circle person" width="255" height="255">
+       </a>
+      <div id="demo" class="collapse">
+        <p>Guitarist and Lead Vocalist</p>
+        <p>Loves long walks on the beach</p>
+        <p>Member since 1988</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+      <img src="./includes/eligit.jpg" class="img img-circle person" width="255" height="255">
+     </a>
+      <div id="demo2" class="collapse">
+        <p>Guitarist and Lead Vocalist</p>
+        <p>Loves long walks on the beach</p>
+        <p>Member since 1988</p>
+      </div>
+    </div>  
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+      <img src="./includes/eliblue.jpg" class="img img-circle person" width="255" height="255" >
+    </a>
+      <div id="demo3" class="collapse">
+        <p>Guitarist and Lead Vocalist</p>
+        <p>Loves long walks on the beach</p>
+        <p>Member since 1988</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-		<p>Suspendisse ut sem sed lorem tristique ornare. Morbi efficitur est ac dolor venenatis, eu suscipit massa tristique. In a augue non turpis sagittis ultricies. Etiam erat ex, egestas ut gravida at, dapibus sed risus. Nulla tristique nisl vel neque imperdiet, ac sagittis nunc facilisis. Duis porttitor mauris et sem feugiat gravida. Pellentesque sollicitudin ante dapibus mauris facilisis vestibulum. Ut eros odio, blandit a elementum et, luctus in dolor.</p>
+<!-- Container (Contact Section) -->
+<div class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus id ipsum imperdiet pharetra. Morbi non imperdiet ante. Integer eu sapien sit amet ante malesuada commodo. Maecenas commodo posuere ex, nec pellentesque augue condimentum sed. Nam quis tempor enim. Ut ac rutrum ipsum, vel scelerisque quam. Etiam ac est id purus vestibulum ultricies. Aliquam vitae erat eget metus lobortis consequat.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-		<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu pellentesque elit. Proin aliquet commodo lorem in tempus. Duis ultrices feugiat nibh in tempor. Curabitur consectetur fringilla felis, a sodales ante rutrum ut. Sed nec tellus turpis. Integer ac pharetra massa. Nulla gravida nulla in nunc feugiat posuere.</p>
+<footer class="text-center">
+  <li><a href="https://www.linkedin.com/in/eliboldewijn?trk=hp-identity-name">
+    <img class="page" src="./include/IN.png" alt="Connect With Me" style="float:right;width:28px;height:28px;border:0;"></a></li>
 
-		<p>Nullam vitae justo quis justo consequat blandit. Ut in blandit purus. In eleifend, enim in pellentesque laoreet, lorem ligula auctor nisi, ornare placerat lorem ex eget ipsum. Phasellus interdum dolor a dui bibendum, nec facilisis purus vulputate. Ut in lectus gravida, tristique tortor eget, aliquam ex. Suspendisse potenti. Morbi sed massa magna. Cras sed sodales nisi.</p>
+  <li><a href="https://soundcloud.com/escaped-lyrics/tracks"> 
+    <img class="page" src="./include/SC.png" alt="Listen To Me" style="float:right;width:28px;height:28px;border:0;"></a></li>
 
-		<p>Sed euismod ante justo. Vivamus nibh risus, ornare vehicula massa nec, hendrerit luctus lacus. Phasellus feugiat commodo nibh, et rutrum ex lobortis sit amet. Nam varius ultrices ligula, ut dapibus libero lobortis sed. Vivamus vel dictum lorem. Vestibulum non mi nec tellus fermentum varius. Sed scelerisque nisi ut finibus porta. Curabitur leo purus, ultricies eu tincidunt sed, tempor eget lorem. Suspendisse nec libero nec lorem porta congue id a eros.</p>
+  <li><a href="https://www.youtube.com/user/betje87">
+    <img class="page" src="./include/yt.png" alt="Watch Me" style="float:left;width:28px;height:28px;border:0;"></a></li>
+  
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+</footer>
 
-		<p>Suspendisse ut sem sed lorem tristique ornare. Morbi efficitur est ac dolor venenatis, eu suscipit massa tristique. In a augue non turpis sagittis ultricies. Etiam erat ex, egestas ut gravida at, dapibus sed risus. Nulla tristique nisl vel neque imperdiet, ac sagittis nunc facilisis. Duis porttitor mauris et sem feugiat gravida. Pellentesque sollicitudin ante dapibus mauris facilisis vestibulum. Ut eros odio, blandit a elementum et, luctus in dolor.</p>
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+</script>
 
-	</div>
-	
-	</div>
-
-	<div class="header"></div>
-	
 </body>
 </html>

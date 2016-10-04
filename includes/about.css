@@ -1,62 +1,106 @@
-body {
-	width: 100%;
-	margin: auto; 
-}
+/* ---------------- < p > ----------------  */
 
-/* will aline the content, and margin will center it */
 .container {
-	width: 960px;
-	margin: 0 auto;
+	padding: 80px 120px;
 }
 
-.content {
+/* ---------------- < circle img > ---------------- */
 
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
 }
 
-/* width 100% will make the BG span over the entire page */
-.header {
-	background: #6495ED;
-	width: 100%;
-	height: 68px;
-	top: 0;
+/* ---------------- < carousel > ---------------- */ 
+
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
 }
 
-.foot {
-	background: #6495ED;
-	position: fixed;
-	width: 100%;
-	height: 68px;
-	top: 0;
+.carosel .item {
+	height: 500px;
+	background-color: #777;
 }
 
-.logo {
-	float: left;
-	font-family: 
-	font-size: 18;
+.carousel-caption h3 {
+    color: #fff !important;
 }
 
-a {
-	text-decoration: none;
-	color: #fff;
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
 }
 
-/* in order to get the nav horizontal & line in the middle */
+/* ---------------- < nav bar > ---------------- */
 
-li {
-	list-style: none;
-	float: left;
-	margin-left: 18px;
-	margin-top: 3px;
-	font-size: 18px;
-	padding-top: 18px;
+/* Add a dark background color with a little bit see-through */ 
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
 }
 
-.nav {
-	float: right;
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
 }
 
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
 
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
 
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
 
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
 
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
 
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+
+/* ---------------- < footer > ---------------- */
+
+/* Add a dark background color to the footer */
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 13px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}

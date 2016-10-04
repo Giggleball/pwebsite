@@ -132,7 +132,7 @@
   </div>
 </div>
 
-&nbsp;
+<br><br>
 
 <div id="qlt" class="container-fluid text-center">
   <h2>QUALITIES</h2>
@@ -176,7 +176,7 @@
   </div>
 </div>
 
-&nbsp;
+<br><br>
 
 <div id="port" class="container-fluid text-center bg-grey">
   <h2>Portfolio</h2>
@@ -185,39 +185,42 @@
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="./includes/fL.jpg" alt="funLoop">
-        <p><strong>A function with a loop</strong></p>
+        <p><strong> ~ Web Developing ~ </p>
+        <p>A function with a loop</strong></p>
         <p>One of the first things we've learned</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+        <img src="./includes/2D.jpg" alt="2d Animation">
+        <p><strong>~ Animation ~</p>
+        <p>I learned 2D animation during my study abroad</strong></p>
+        <p>A 2D animation about food...</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+        <img src="./includes/king.jpg" alt="video King">
+        <p><strong>~ Cinemetography ~</p>
+        <p>A fashion film for Garment iPad magazine </strong></p>
+        <p>I edited the footage for this project</p>
       </div>
     </div>
 </div>
 
-&nbsp;
+<br><br>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
+  <p class="text-center"> <a class="other" href="mailto:boldewijn.eli@gmail.com?Subject=Hello%20again" target="_top"><em>Giggle @ me!</em></a></p>
 
   <div class="row">
     <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+      <p>Got curious?</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Schiedam, NL</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +31 888888888</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> mail@mail.com</p>
     </div>
     <div class="col-md-8">
       <div class="row">
@@ -239,32 +242,50 @@
   </div>
 </div>
 
-&nbsp;
+<br><br>
 
 <div class="text-center center block">
 
-<footer class="text-center">
-  <a href="https://www.linkedin.com/in/eliboldewijn?trk=hp-identity-name">
-    <img src="./includes/IN.png" alt="Connect With Me"></a>
 
-  <a href="https://soundcloud.com/escaped-lyrics/tracks"> 
-    <img src="./includes/SC.png" alt="Listen To Me"></a>
+<footer class="text-center">
+  
+  <a href="https://github.com/Giggleball">
+    <img class="pad" src="./includes/git.png" style="width:57px;height:57px;" alt="Watch Me"></a>
+
+    &nbsp;
+
+    &nbsp;
+
+  <a href="https://www.linkedin.com/in/eliboldewijn?trk=hp-identity-name">
+    <img class="pad" src="./includes/li.png" style="width:57px;height:57px;" alt="Connect With Me"></a>  
+
+    &nbsp;
+
+    &nbsp;
 
   <a href="https://www.youtube.com/user/betje87">
-    <img src="./includes/yt.png" alt="Watch Me"></a>
+    <img class="pad" src="./includes/yt.png" style="width:57px;height:57px;" alt="Watch Me"></a>
 
-  <br>
+    &nbsp;
 
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    &nbsp; 
+
+  <a href="https://soundcloud.com/escaped-lyrics/tracks"> 
+    <img class="pad" src="./includes/sc.png" style="width:57px;height:57px;" alt="Listen To Me"></a>
+
+ <br><br> 
+<hr>
+<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP"></a>
     <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-
 </footer>
-</div>
 
+</div>
 
 <script>
 $(document).ready(function(){
+    // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+  
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 

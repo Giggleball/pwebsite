@@ -64,8 +64,17 @@ li {
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
 
+    
+------------------------------
 
-#wrapper {
+
+
+
+body{
+	background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/ignasi_pattern_s.png);
+}
+
+#wrapper{
 	width: 90%;
 	max-width: 1100px;
 	min-width: 300px;
@@ -126,3 +135,5 @@ li {
 		-webkit-column-count: 5;
 	}
 }
+
+

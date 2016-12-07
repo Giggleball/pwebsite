@@ -1,0 +1,265 @@
+doctype html
+html(lang='en')
+	head
+		title Life as A Giggleball
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', type='text/css', href='./css/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='./css/main.css')
+		script(type='text/javascript' src='../bundle.js' charset='utf-8')
+		script(src='./js/jquery-3.1.1.min.js')
+		script(src='./js/bootstrap.min.js')
+		script(src='./js/main.js')
+	body#myPage(data-spy='scroll', data-target='.navbar', data-offset='50')
+		nav.navbar.navbar-default.navbar-fixed-top
+			.container-fluid
+				.navbar-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='#') Giggleball
+				#myNavbar.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-right
+						li
+							a(href='#home') HOME
+						li
+							a(href='#about') ABOUT
+						li
+							a(href='#qlt') QUALITIES
+						li
+							a(href='#port') PORTFOLIO
+						li
+							a(href='#contact') CONTACT
+						li.dropdown
+							a.dropdown-toggle(data-toggle='dropdown', href='#')
+								| MORE
+								span.caret
+							ul.dropdown-menu
+								li
+									a(href='#') Culture
+								li
+									a(href='#') Music
+								li
+									a(href='#') Food
+						li
+							a(href='#')
+								span.glyphicon.glyphicon-search
+		#myCarousel.carousel.slide(data-ride='carousel')
+			// Indicators
+			ol.carousel-indicators
+				li.active(data-target='#myCarousel', data-slide-to='0')
+				li(data-target='#myCarousel', data-slide-to='1')
+				li(data-target='#myCarousel', data-slide-to='2')
+			// Wrapper for slides
+			.carousel-inner(role='listbox')
+				.item.active
+					img(src='./img/low.jpg')
+					.carousel-caption
+						h3 New York
+						p Where I've made my first memories.
+				.item
+					img(src='./img/low.jpg', alt='Chicago')
+					.carousel-caption
+						h3 Paramaribo
+						p My hometown which I learn to love more as time goes by.
+				.item
+					img(src='./img/low.jpg', alt='Los Angeles')
+					.carousel-caption
+						h3 Rotterdam
+						p Where friends, love & food come together.
+			// Left and right controls
+			a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+				span.sr-only Previous
+			a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+				span.sr-only Next
+		#about.container.text-center
+			h3 The Giggleballer
+			p
+				em Hello! Nice to meet you!
+			p
+				| Welcome to my page. My name is Elisabeth Boldewijn and I am a web developer in the making. When I'm not learning to code, I like to make music, watch anime and bake delicious things.
+			br
+			.row
+				.col-sm-4
+					p.text-center
+						strong Personal
+					br
+					a(href='#demo', data-toggle='collapse')
+						img.img.img-circle.person(src='./img/elicut.jpg', width='255', height='255')
+					#demo.collapse
+						p Born on December 26th
+						p Has one older & one younger sister
+						p Lives in Schiedam, The Netherlands
+				.col-sm-4
+					p.text-center
+						strong Education
+					br
+					a(href='#demo2', data-toggle='collapse')
+						img.img.img-circle.person(src='./img/eligit.jpg', width='255', height='255')
+					#demo2.collapse
+						p Bachelor in Business Administration
+						p Study Abroad in Hungary - Animation
+						p Basic Japanese
+				.col-sm-4
+					p.text-center
+						strong Goals
+					br
+					a(href='#demo3', data-toggle='collapse')
+						img.img.img-circle.person(src='./img/eliblue.jpg', width='255', height='255')
+					#demo3.collapse
+						p Becoming a Fullstack Web Developer
+						p Improving my Video Editing & Animation skills
+						p Becoming fluent in Japanese & learning Korean
+		br
+		br
+		#qlt.container.text-center
+			h2 QUALITIES
+			h4 What I'm good at
+			br
+			.row
+				.col-sm-4
+					span.glyphicon.glyphicon-off
+					h4 LANGUAGES
+					p
+						| I grew up bilingual in Dutch and English and am fluent in German. 
+						| I've been learning German Since the age of 14. 
+						| At first because it was mandatory in highschool, then I fell in love 
+						| with a German band and the rest is history... 
+						br
+						br
+						|       Soon i'll be fluent in JavaScript as well!
+				.col-sm-4
+					span.glyphicon.glyphicon-heart
+					h4 VIDEO EDITING
+					p
+						| Video editing is a hobby of mine which I hope to do for a long time. Since
+						| a young age I have always been interested in how movies were made, especially
+						| music videos and animations. Music is the triggers to my imagination which fills my mind with cuntless ideas.
+						| I am selftaught, and enjoy learning new techniques which can help me improve me skills
+				.col-sm-4
+					span.glyphicon.glyphicon-play
+					h4 MUSIC
+					p
+						| There's no life without music. Music is boundless and everyone understands it, 
+						| calling out different feelings in each individual. I have learnt myself how to play the guitar
+						| and occasionately make cover videos and post them on YouTube. Not to brag or anything, 
+						| but I do believe I am a pretty good singer. Feel free to check out my music on 
+						a(href='https://soundcloud.com/escaped-lyrics/tracks') soundcloud
+						|  & 
+						a(href='https://www.youtube.com/user/betje87') YouTube
+						| .
+			br
+			br
+			.row
+				.col-sm-4
+					span.glyphicon.glyphicon-leaf
+					h4 PROBLEM SOLVING
+					p
+						| I've come to realise that through my creativity 'or random & weird way of thinking'
+						| I've come to solving problems at work or in my personal life. These days you get less resources to work with but
+						| it's expected from you to produce the same or something better. I believe this environment has forced me to solve
+						| things in a more creative way.
+				.col-sm-4
+					span.glyphicon.glyphicon-certificate
+					h4 LEARNING
+					p
+						| I never knew I'd enjoy learning so much. I guess if you have an interest in things, your effort will pay off.
+						| All the 'skills' I've mentioned so far I've learned myself by being curious, trial and error and a LOT of patience.
+						| I believe someone who is willing to expand their knowledge is priceless, and that img me.
+				.col-sm-4
+					span.glyphicon.glyphicon-wrench
+					h4 HARD WORK
+					p
+						| I've always worked next to my study, sometimes up to three jobs at the same time. I also always put all my effort in
+						| delivering the best service or product, because that's how I want to be treated as well. Hard work has gotten me to where
+						| I am right now, and will help me fullfill my goals. That I'm sure of.
+		br
+		br
+		#port.container.text-center.bg-grey
+			h2 Portfolio
+			h4 What I have created
+			.row.text-center
+				.col-sm-4
+					.thumbnail
+						a(href='https://github.com/Giggleball')
+							img(src='./img/fL.jpg', alt='funLoop')
+						p
+							strong  ~ Web Developing ~ 
+						p A function with a loop
+						p One of the first things we've learned
+				.col-sm-4
+					.thumbnail
+						a(href='https://www.youtube.com/watch?v=Mns8zONashc')
+							img(src='./img/2D.jpg', alt='2d Animation')
+						p
+							strong ~ Animation ~
+						p I learned 2D animation during my study abroad
+						p A 2D animation about food...
+				.col-sm-4
+					.thumbnail
+						a(href='https://www.youtube.com/watch?v=rCx7pKsoOKQ')
+							img(src='./img/king.jpg', alt='video King')
+						p
+							strong ~ Cinemetography ~
+						p A fashion film for Garment iPad magazine 
+						p I edited the footage for this project
+			br
+			br
+			// Container (Contact Section)
+			#contact.container
+				h3.text-center Contact
+				p.text-center
+					a.other(href='mailto:boldewijn.eli@gmail.com?Subject=Hello%20again', target='_top')
+						em Giggle @ me!
+				.row
+					.col-md-4
+						p Got curious?
+						p
+							span.glyphicon.glyphicon-map-marker
+							|  Schiedam, NL
+						p
+							span.glyphicon.glyphicon-phone
+							|  +31 888888888
+						p
+							span.glyphicon.glyphicon-envelope
+							|  mail@mail.com
+					//
+						<div class="col-md-8">
+						<div class="row">
+						<div class="col-sm-6 form-group">
+						<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+						</div>
+						<div class="col-sm-6 form-group">
+						<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+						</div>
+						</div>
+						<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+						<br>
+						<div class="row">
+						<div class="col-md-12 form-group">
+						<button class="btn pull-right" type="submit">Send</button>
+						</div>
+						</div>
+						</div>
+						</div>
+					br
+					br
+				
+					footer.container-fluid.text-center.navbar-fixed-bottom
+						a(href='https://github.com/Giggleball')
+							img.pad(src='./img/git.png', style='width:37px;height:37px;', alt='Watch Me')
+						a(href='https://www.linkedin.com/in/eliboldewijn?trk=hp-identity-name')
+							img.pad(src='./img/li.png', style='width:37px;height:37px;', alt='Connect With Me')
+						a(href='https://www.youtube.com/user/betje87')
+							img.pad(src='./img/yt.png', style='width:37px;height:37px;', alt='Watch Me')
+						a(href='https://soundcloud.com/escaped-lyrics/tracks')
+							img.pad(src='./img/sc.png', style='width:37px;height:37px;', alt='Listen To Me')
+						br
+						br
+						a#back-to-top(href='#', role='button', title='To the top page', data-toggle='tooltip')
+							span.glyphicon.glyphicon-chevron-up
+				
+					

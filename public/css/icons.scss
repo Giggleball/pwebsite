@@ -1,0 +1,13 @@
+
+/* ---------------- < styling icons > ---------------- */
+
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+
+.logo {
+    @extend .logo-small;
+    font-size: + 150;
+}

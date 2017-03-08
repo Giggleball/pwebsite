@@ -1,348 +1,339 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <title>Life as A Giggleball</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="./includes/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./includes/about.css">
+
   <script src="./jquery-3.1.1.min.js"></script>
   <script src="./includes/bootstrap.min.js"></script>
+
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#">Giggleball</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#qlt">QUALITIES</a></li>
-        <li><a href="#port">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Culture</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Food</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-    </div>
-  </div>
+   <div class="container-fluid">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span> 
+         </button>
+         <a class="navbar-brand" href="#">Giggleball</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#qlt">QUALITIES</a></li>
+            <li><a href="#port">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+               <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a href="#">Culture</a></li>
+                  <li><a href="#">Music</a></li>
+                  <li><a href="#">Food</a></li> 
+               </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+         </ul>
+      </div>
+   </div>
 </nav>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="./includes/faded_nycity.jpg" alt="New York">
-      <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>Where I've made my first memories.</p>
-      </div> 
-    </div>
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner" role="listbox">
+      <div class="item active">
+         <img src="./includes/faded_nycity.jpg" alt="New York">
+         <div class="carousel-caption">
+         <h3>New York</h3>
+            <p>Where I've made my first memories.</p>
+         </div> 
+      </div>
 
-    <div class="item">
-      <img src="./includes/low.jpg" alt="Chicago">
-      <div class="carousel-caption">
-        <h3>Paramaribo</h3>
-        <p>My hometown which I learn to love more as time goes by.</p>
-      </div> 
-    </div>
+      <div class="item">
+         <img src="./includes/low.jpg" alt="Chicago">
+         <div class="carousel-caption">
+            <h3>Paramaribo</h3>
+            <p>My hometown which I learn to love more as time goes by.</p>
+         </div> 
+      </div>
 
-    <div class="item">
-      <img src="./includes/low.jpg" alt="Los Angeles">
-      <div class="carousel-caption">
-        <h3>Rotterdam</h3>
-        <p>Where friends, love &amp; food come together.</p>
-      </div> 
-    </div>
-  </div>
+      <div class="item">
+         <img src="./includes/low.jpg" alt="Los Angeles">
+         <div class="carousel-caption">
+            <h3>Rotterdam</h3>
+            <p>Where friends, love &amp; food come together.</p>
+         </div> 
+      </div>
+   </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+   </a>
 </div>
 
 <div id="about" class="container text-center">
-  <h3>The Giggleballer</h3>
-  <p><em>Hello! Nice to meet you!</em></p>
-  <p>Welcome to my page. My name is Elisabeth Boldewijn and I am a web developer in the making. When I'm not learning to code, I like to make music, watch anime and bake delicious things.</p>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Personal</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-      <img src="./includes/elicut.jpg" class="img img-circle person" width="255" height="255">
-       </a>
-      <div id="demo" class="collapse">
-        <p>Born on December 26th</p>
-        <p>Has one older &amp; one younger sister</p>
-        <p>Lives in Schiedam, The Netherlands</p>
+   <h3>The Giggleballer</h3>
+   <p><em>Hello! Nice to meet you!</em></p>
+   <p>Welcome to my page. My name is Elisabeth Boldewijn and I am a web developer in the making. When I'm not learning to code, I like to make music, watch anime and bake delicious things.</p>
+   <br>
+   <div class="row">
+      <div class="col-sm-4">
+         <p class="text-center"><strong>Personal</strong></p><br>
+         <a href="#demo" data-toggle="collapse">
+         <img src="./includes/elicut.jpg" class="img img-circle person" width="255" height="255">
+         </a>
+         <div id="demo" class="collapse">
+            <p>Born on December 26th</p>
+            <p>Has one older &amp; one younger sister</p>
+            <p>Lives in Schiedam, The Netherlands</p>
+         </div>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Education</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-      <img src="./includes/eligit.jpg" class="img img-circle person" width="255" height="255">
-     </a>
-      <div id="demo2" class="collapse">
-        <p>Bachelor in Business Administration</p>
-        <p>Study Abroad in Hungary - Animation</p>
-        <p>Basic Japanese</p>
+      <div class="col-sm-4">
+         <p class="text-center"><strong>Education</strong></p><br>
+         <a href="#demo2" data-toggle="collapse">
+            <img src="./includes/eligit.jpg" class="img img-circle person" width="255" height="255">
+         </a>
+         <div id="demo2" class="collapse">
+            <p>Bachelor in Business Administration</p>
+            <p>Study Abroad in Hungary - Animation</p>
+            <p>Basic Japanese</p>
+         </div>
+      </div>  
+      <div class="col-sm-4">
+         <p class="text-center"><strong>Goals</strong></p><br>
+         <a href="#demo3" data-toggle="collapse">
+          <img src="./includes/eliblue.jpg" class="img img-circle person" width="255" height="255" >
+         </a>
+         <div id="demo3" class="collapse">
+            <p>Becoming a Fullstack Web Developer</p>
+            <p>Improving my Video Editing &amp; Animation skills</p>
+            <p>Becoming fluent in Japanese &amp; learning Korean</p>
+         </div>
       </div>
-    </div>  
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Goals</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-      <img src="./includes/eliblue.jpg" class="img img-circle person" width="255" height="255" >
-    </a>
-      <div id="demo3" class="collapse">
-        <p>Becoming a Fullstack Web Developer</p>
-        <p>Improving my Video Editing &amp; Animation skills</p>
-        <p>Becoming fluent in Japanese &amp; learning Korean</p>
-      </div>
-    </div>
-  </div>
+   </div>
 </div>
 
 <br><br>
 
 <div id="qlt" class="container-fluid text-center">
-  <h2>QUALITIES</h2>
-  &nbsp;
-  <h4>What I'm good at</h4>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off"></span>
-      <h4>LANGUAGES</h4>
-      <p>I grew up bilingual in Dutch and English and am fluent in German. 
-      I've been learning German Since the age of 14. 
-      At first because it was mandatory in highschool, then I fell in love 
-      with a German band and the rest is history... 
-      &nbsp; <br><br>
-      Soon i'll be fluent in JavaScript as well!</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart"></span>
-      <h4>VIDEO EDITING</h4>
-      <p>Video editing is a hobby of mine which I hope to do for a long time. Since 
-      a young age I have always been interested in how movies were made, especially
-      music videos and animations. Music is the triggers to my imagination which fills my mind with cuntless ideas. 
-      I am selftaught, and enjoy learning new techniques which can help me improve me skills</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-play"></span>
-      <h4>MUSIC</h4>
-      <p>There's no life without music. Music is boundless and everyone understands it, 
-      calling out different feelings in each individual. I have learnt myself how to play the guitar
-      and occasionately make cover videos and post them on YouTube. Not to brag or anything, 
-      but I do believe I am a pretty good singer. Feel free to check out my music on <a href="https://soundcloud.com/escaped-lyrics/tracks">soundcloud</a> &amp; <a href="https://www.youtube.com/user/betje87">YouTube</a>. </p>
-    </div>
-    </div>
-    <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf"></span>
-      <h4>PROBLEM SOLVING</h4>
-      <p>I've come to realise that through my creativity 'or random &amp; weird way of thinking'
-      I've come to solving problems at work or in my personal life. These days you get less resources to work with but
-      it's expected from you to produce the same or something better. I believe this environment has forced me to solve
-      things in a more creative way.</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate"></span>
-      <h4>LEARNING</h4>
-      <p>I never knew I'd enjoy learning so much. I guess if you have an interest in things, your effort will pay off.
-      All the 'skills' I've mentioned so far I've learned myself by being curious, trial and error and a LOT of patience. 
-      I believe someone who is willing to expand their knowledge is priceless, and that includes me.</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench"></span>
-      <h4>HARD WORK</h4>
-      <p>I've always worked next to my study, sometimes up to three jobs at the same time. I also always put all my effort in 
-      delivering the best service or product, because that's how I want to be treated as well. Hard work has gotten me to where 
-      I am right now, and will help me fullfill my goals. That I'm sure of. </p>
-    </div>
-  </div>
+   <h2>QUALITIES</h2>
+   &nbsp;
+   <h4>What I'm good at</h4>
+   <br>
+   <div class="row">
+      <div class="col-sm-4">
+         <span class="glyphicon glyphicon-off"></span>
+         <h4>LANGUAGES</h4>
+         <p>I grew up bilingual in Dutch and English and am fluent in German. I've been learning German Since the age of 14. At first because it was mandatory in high school, then I fell in love with a German band and the rest is history... 
+         &nbsp; <br><br>
+         Soon I'll be fluent in JavaScript as well!</p>
+      </div>
+      <div class="col-sm-4">
+         <span class="glyphicon glyphicon-heart"></span>
+         <h4>VIDEO EDITING</h4>
+         <p>Video editing is a hobby of mine which I hope to do for a long time. Since a young age I have always been interested in how movies were made, especially music videos and animations. Music is the triggers to my imagination which fills my mind with countless ideas. 
+            I am self taught, and enjoy learning new techniques which can help me improve me skills</p>
+      </div>
+      <div class="col-sm-4">
+         <span class="glyphicon glyphicon-play"></span>
+         <h4>MUSIC</h4>
+         <p>There's no life without music. Music is boundless and everyone understands it,          calling out different feelings in each individual. I have learned how to play the guitar myself and occasionally make cover videos and post them on YouTube. Not to brag or anything, but I do believe I am a pretty good singer. Feel free to check out my music on <a href="https://soundcloud.com/escaped-lyrics/tracks">soundcloud</a> &amp; <a href="https://www.youtube.com/user/betje87">YouTube</a>. </p>
+      </div>
+   </div>
+   <br><br>
+   <div class="row">
+      <div class="col-sm-4">
+         <span class="glyphicon glyphicon-leaf"></span>
+         <h4>PROBLEM SOLVING</h4>
+         <p>I've come to realize that through my creativity 'or random &amp; weird way of thinking'
+            I've come to solving problems at work or in my personal life. These days you get less resources to work with but
+            it's expected from you to produce the same or something better. I believe this environment has forced me to solve things in a more creative way.</p>
+      </div>
+      <div class="col-sm-4">
+         <span class="glyphicon glyphicon-certificate"></span>
+            <h4>LEARNING</h4>
+            <p>I never knew I'd enjoy learning so much. I guess if you have an interest in things, your effort will pay off.
+            All the 'skills' I've mentioned so far I've learned myself by being curious, trial and error and a LOT of patience. 
+            I believe someone who is willing to expand their knowledge is priceless, and that includes me.</p>
+      </div>
+      <div class="col-sm-4">
+         <span class="glyphicon glyphicon-wrench"></span>
+            <h4>HARD WORK</h4>
+            <p>I've always worked next to my study, sometimes up to three jobs at the same time. I also always put all my effort in delivering the best service or product, because that's how I want to be treated as well. Hard work has gotten me to where I am right now, and will help me fulfill my goals. That I'm sure of. </p>
+      </div>
+   </div>
 </div>
 
 <br><br>
 
 <div id="port" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2>
-  <h4>What I have created</h4>
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="https://github.com/Giggleball"><img src="./includes/fL.jpg" alt="funLoop"></a>
-        <p><strong> ~ Web Developing ~ </p>
-        <p>A function with a loop</strong></p>
-        <p>One of the first things we've learned</p>
+   <h2>Portfolio</h2>
+   <h4>What I have created</h4>
+   <div class="row text-center">
+      <div class="col-sm-4">
+         <div class="thumbnail">
+            <a href="https://github.com/Giggleball"><img src="./includes/fL.jpg" alt="funLoop"></a>
+            <p><strong> ~ Web Developing ~ </p>
+            <p>A function with a loop</strong></p>
+            <p>One of the first things we've learned</p>
+         </div>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="https://www.youtube.com/watch?v=Mns8zONashc"><img src="./includes/2D.jpg" alt="2d Animation"></a>
-        <p><strong>~ Animation ~</p>
-        <p>I learned 2D animation during my study abroad</strong></p>
-        <p>A 2D animation about food...</p>
+      <div class="col-sm-4">
+         <div class="thumbnail">
+            <a href="https://www.youtube.com/watch?v=Mns8zONashc"><img src="./includes/2D.jpg" alt="2d Animation"></a>
+            <p><strong>~ Animation ~</p>
+            <p>I learned 2D animation during my study abroad</strong></p>
+            <p>A 2D animation about food...</p>
+         </div>
       </div>
-    </div>
-    <div class="col-sm-4">
+   <div class="col-sm-4">
       <div class="thumbnail">
-        <a href="https://www.youtube.com/watch?v=rCx7pKsoOKQ"><img src="./includes/king.jpg" alt="video King"></a>
-        <p><strong>~ Cinemetography ~</p>
-        <p>A fashion film for Garment iPad magazine </strong></p>
-        <p>I edited the footage for this project</p>
+         <a href="https://www.youtube.com/watch?v=rCx7pKsoOKQ"><img src="./includes/king.jpg" alt="video King"></a>
+         <p><strong>~ Cinemetography ~</p>
+         <p>A fashion film for Garment iPad magazine </strong></p>
+         <p>I edited the footage for this project</p>
       </div>
-    </div>
+   </div>
 </div>
 
 <br><br>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"> <a class="other" href="mailto:boldewijn.eli@gmail.com?Subject=Hello%20again" target="_top"><em>Giggle @ me!</em></a></p>
+   <h3 class="text-center">Contact</h3>
+   <p class="text-center"> <a class="other" href="mailto:boldewijn.eli@gmail.com?Subject=Hello%20again" target="_top"><em>Giggle @ me!</em></a></p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <p>Got curious?</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Schiedam, NL</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +31 888888888</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> mail@mail.com</p>
-    </div>
-   <!-- <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
+   <div class="row">
+      <div class="col-md-4">
+         <p>Got curious?</p>
+         <p><span class="glyphicon glyphicon-map-marker"></span> Schiedam, NL</p>
+         <p><span class="glyphicon glyphicon-phone"></span> +31 888888888</p>
+         <p><span class="glyphicon glyphicon-envelope"></span> mail@mail.com</p>
+  </div>
+      <div class="col-md-8">
+         <div class="row">
+            <div class="col-sm-6 form-group">
+               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+         </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+         <br>
+         <div class="row">
+            <div class="col-md-12 form-group">
+               <button class="btn pull-right" type="submit">Send</button>
+            </div>
+         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>-->
+   </div>
 </div>
 
 <br><br>
-<div class="text-center center block">
 
 <footer class="text-center">
-  
-  <a href="https://github.com/Giggleball">
-    <img class="pad" src="./includes/git.png" style="width:37px;height:37px;" alt="Watch Me"></a>
 
-    &nbsp;
+   <a href="https://github.com/Giggleball">
+   <img class="pad" src="./includes/git.png" style="width:37px;height:37px;" alt="Watch Me"></a>
+   &nbsp;
 
-    &nbsp;
+   &nbsp;
 
-  <a href="https://www.linkedin.com/in/eliboldewijn?trk=hp-identity-name">
-    <img class="pad" src="./includes/li.png" style="width:37px;height:37px;" alt="Connect With Me"></a>  
+   <a href="https://www.linkedin.com/in/eliboldewijn?trk=hp-identity-name">
+   <img class="pad" src="./includes/li.png" style="width:37px;height:37px;" alt="Connect With Me"></a>  
 
-    &nbsp;
+   &nbsp;
 
-    &nbsp;
+   &nbsp;
 
-  <a href="https://www.youtube.com/user/betje87">
-    <img class="pad" src="./includes/yt.png" style="width:37px;height:37px;" alt="Watch Me"></a>
+   <a href="https://www.youtube.com/user/betje87">
+   <img class="pad" src="./includes/yt.png" style="width:37px;height:37px;" alt="Watch Me"></a>
 
-    &nbsp;
+   &nbsp;
 
-    &nbsp; 
+   &nbsp; 
 
-  <a href="https://soundcloud.com/escaped-lyrics/tracks"> 
-    <img class="pad" src="./includes/sc.png" style="width:37px;height:37px;" alt="Listen To Me"></a>
+   <a href="https://soundcloud.com/escaped-lyrics/tracks"> 
+   <img class="pad" src="./includes/sc.png" style="width:37px;height:37px;" alt="Listen To Me"></a>
 
- <br><br> 
+   <br><br> 
 
-<a id="back-to-top" href="#" role="button" title="To the top page" data-toggle="tooltip"><span class="glyphicon glyphicon-chevron-up"></span></a>
+   <a id="back-to-top" href="#" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
 </footer>
 
-</div>
-
 <script>
-$(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
+   $(document).ready(function(){
+      $(window).scroll(function () {
+         if ($(this).scrollTop() > 50) {
+            $('#back-to-top').fadeIn();
+         } else {
+            $('#back-to-top').fadeOut();
+         }
+      });
+
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+         $('#back-to-top').tooltip('hide');
             $('body,html').animate({
-                scrollTop: 0
+               scrollTop: 0
             }, 800);
             return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
-   
-
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
       });
-    } // End if 
-  });
+
+      $('#back-to-top').tooltip('show');
+
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+         // Prevent default anchor click behavior
+         event.preventDefault();
+         // Store hash
+         var hash = this.hash;
+         // Using jQuery's animate() method to add smooth page scroll
+         // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+         $('html, body').animate({
+            scrollTop: $(hash).offset().top
+         }, 900, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+         });
+      } // End if 
+   });
 })
 </script>
 
 </body>
+
 </html>

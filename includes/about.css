@@ -114,6 +114,12 @@
     background-color: red !important;
 }
 
+/* ---------------- < portfolio > ---------------- */
+.pics { 
+    width: 364px;
+    height: 336px;
+}
+
 /* ---------------- < footer > ---------------- */
 
 .back-to-top{
